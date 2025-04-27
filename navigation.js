@@ -147,6 +147,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	buildNavigation();
 
 	const params = new URLSearchParams(document.location.search);
-	const defaultPath = params.get("path");
-	screenShotElement.src=defaultPath || 'billing/census.png';
+	const defaultPath = params.get("path") || "/dashboard/census.png";
+	screenShotElement.src=defaultPath;
 });
