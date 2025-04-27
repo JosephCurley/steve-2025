@@ -3,7 +3,7 @@ const navigationData = {
     "Census": "/dashboard/census.png",
     "Billing": "/dashboard/billing.png",
     "Report": "/dashboard/report.png",
-    "Dashboard Confirm List": "/dashboard/dashboard-confirm-list"
+    "Dashboard Confirm List": "/dashboard/dashboard-confirm-list.png"
   },
   "Resident": {
     "Dashboard": "/resident/dashboard.png",
@@ -29,13 +29,13 @@ const navigationData = {
       "Clinic inpatient Report": "/resident/reports/clinic-inpatient-report.png",
       "Census Daily Report": "/resident/reports/census-daily-report.png",
       "Tracking Report": "/resident/reports/tracking-report.png",
-      "Clinical vs. Census Report": "/resident/reports/clinical-vs-census-report"
+      "Clinical vs. Census Report": "/resident/reports/clinical-vs-census-report.png"
     },
     "Control": {
       "Delete Resident": "/resident/control/delete-resident.png",
       "Import Resident": "/resident/control/import-resident.png",
       "Enterprise Active Resident Roster": "/resident/control/enterprise-active-resident-roster.png",
-      "Search Resident": "/resident/control/search-resident"
+      "Search Resident": "/resident/control/search-resident.png"
     }
   },
   "Billing": {
@@ -45,7 +45,7 @@ const navigationData = {
       "Special Room Charge Entry": "/billing/item-code-entry/special-room-charge-entry.png",
       "Recurring Code Entry": "/billing/item-code-entry/recurring-code-entry.png",
       "Ancillary Code Entry": "/billing/item-code-entry/ancillary-code-entry.png",
-      "Multi Ancillary Item Entry": "/billing/item-code-entry/multi-ancillary-item-entry"
+      "Multi Ancillary Item Entry": "/billing/item-code-entry/multi-ancillary-item-entry.png"
     },
     "Bill & Claim": {
       "Billing Main": "/billing/bill-claim/billing-main.png",
@@ -54,11 +54,11 @@ const navigationData = {
       "277 Reader": "/billing/bill-claim/277-reader.png",
       "999 Reader": "/billing/bill-claim/999-reader.png",
       "EDI 837 File": "/billing/bill-claim/edi-837-file.png",
-      "835 Reader": "/billing/bill-claim/835-reader"
+      "835 Reader": "/billing/bill-claim/835-reader.png"
     },
     "Payment/Postings": "/billing/payment-postings.png",
     "Private Pay": {
-      "Resident Statement": "/billing/private-pay/resident-statement"
+      "Resident Statement": "/billing/private-pay/resident-statement.png"
     },
     "Reports": {
       "Resident/Payor Aging": "/billing/reports/resident-payor-aging.png",
@@ -89,7 +89,7 @@ const navigationData = {
       "Aging Report - Credit Balance": "/billing/reports/aging-report-credit-balance.png",
       "Primary Diagnosis Report": "/billing/reports/primary-diagnosis-report.png",
       "TAR Expiring Report": "/billing/reports/tar-expiring-report.png",
-      "Consolidated Report": "/billing/reports/consolidated-report"
+      "Consolidated Report": "/billing/reports/consolidated-report.png"
     },
     "Monthly Close": {
       "GL Close": "/billing/monthly-close/gl-close.png",
@@ -109,13 +109,13 @@ const navigationData = {
       "G/L Detail Report": "/billing/monthly-close/gl-detail-report.png",
       "Resident Summary Aging": "/billing/monthly-close/resident-summary-aging.png",
       "Facility Summary Aging": "/billing/monthly-close/facility-summary-aging.png",
-      "Unmatch Balance": "/billing/monthly-close/unmatch-balance"
+      "Unmatch Balance": "/billing/monthly-close/unmatch-balance.png"
     },
     "Compliance": {
-      "Facility Level": "/billing/compliance/facility-level"
+      "Facility Level": "/billing/compliance/facility-level.png"
     },
     "ETC": {
-      "Consolidated Report": "/billing/etc/consolidated-report"
+      "Consolidated Report": "/billing/etc/consolidated-report.png"
     },
     "Facility Setup": {
       "Adjustment Factor": "/billing/facility-setup/adjustment-factor.png",
@@ -131,7 +131,7 @@ const navigationData = {
       "Ancillary Charge Master": "/billing/facility-setup/ancillary-charge-master.png",
       "RUG Rate": "/billing/facility-setup/rug-rate.png",
       "Medicare Copay Master": "/billing/facility-setup/medicare-copay-master.png",
-      "Facility Basic Settings": "/billing/facility-setup/facility-basic-settings"
+      "Facility Basic Settings": "/billing/facility-setup/facility-basic-settings.png"
     }
   },
   "Trust Fund": {
@@ -140,7 +140,7 @@ const navigationData = {
     "Trust Fund Audit Report": "/trust-fund/audit-report.png",
     "Trust Fund Statement": "/trust-fund/statement.png",
     "Trust Fund Balance Report": "/trust-fund/balance-report.png",
-    "Trust Fund Transaction Report": "/trust-fund/transaction-report"
+    "Trust Fund Transaction Report": "/trust-fund/transaction-report.png"
   },
   "EMR": {
     "Dashboard": "/emr/dashboard.png",
@@ -182,17 +182,17 @@ const navigationData = {
       "Neuro Check": "/emr/nurse/neuro-check.png",
       "Scan Documents": "/emr/nurse/scan-documents.png",
       "Special Program": "/emr/nurse/special-program.png",
-      "Note List": "/emr/nurse/note-list"
+      "Note List": "/emr/nurse/note-list.png"
     },
     "LAB & X-Ray": {
       "LAB & X-Ray": "/emr/lab-xray/lab-xray.png",
-      "LAB & X-Ray by Date": "/emr/lab-xray/lab-xray-by-date"
+      "LAB & X-Ray by Date": "/emr/lab-xray/lab-xray-by-date.png"
     },
     "Event Schedule": {
       "Event Attendance": "/emr/event-schedule/event-attendance.png",
       "Event Master": "/emr/event-schedule/event-master.png",
       "Event Scheduling": "/emr/event-schedule/event-scheduling.png",
-      "Event Preference": "/emr/event-schedule/event-preference"
+      "Event Preference": "/emr/event-schedule/event-preference.png"
     },
     "QAPI": {
       "Incident": "/emr/qapi/incident.png",
@@ -204,33 +204,33 @@ const navigationData = {
       "Reports": "/emr/qapi/reports.png",
       "CMS672 Report": "/emr/qapi/cms672-report.png",
       "Return To Acute Audit": {
-        "Acute care Transfer Log": "/emr/qapi/return-to-acute-audit/acute-care-transfer-log"
+        "Acute care Transfer Log": "/emr/qapi/return-to-acute-audit/acute-care-transfer-log.png"
       },
       "Reports": {
         "RTA Admission Detail Reports": "/emr/qapi/reports/rta-admission-detail-reports.png",
         "Transfer Detail Report": "/emr/qapi/reports/transfer-detail-report.png",
         "Readmission Rate": "/emr/qapi/reports/readmission-rate.png",
         "RTA Log Creation Report": "/emr/qapi/reports/rta-log-creation-report.png",
-        "Total RTA Report": "/emr/qapi/reports/total-rta-report"
+        "Total RTA Report": "/emr/qapi/reports/total-rta-report.png"
       },
       "Group Report": "/emr/qapi/group-report.png",
-      "Weekly SOC": "/emr/qapi/weekly-soc"
+      "Weekly SOC": "/emr/qapi/weekly-soc.png"
     },
     "ADL": {
       "CNA Assign": "/emr/adl/cna-assign.png",
       "ADL Plan of Care": "/emr/adl/adl-plan-of-care.png",
       "ADL Management": "/emr/adl/adl-management.png",
       "ADL Schedule": "/emr/adl/adl-schedule.png",
-      "ADL Admission Default Setup": "/emr/adl/adl-admission-default-setup"
+      "ADL Admission Default Setup": "/emr/adl/adl-admission-default-setup.png"
     },
     "Wound Care": {
       "Daily Wound": "/emr/wound-care/daily-wound.png",
       "Weekly Wound": "/emr/wound-care/weekly-wound.png",
-      "Wound Report": "/emr/wound-care/wound-report"
+      "Wound Report": "/emr/wound-care/wound-report.png"
     },
     "24H Report": "/emr/24h-report.png",
     "Set Up": {
-      "Dashboard Setup": "/emr/set-up/dashboard-setup"
+      "Dashboard Setup": "/emr/set-up/dashboard-setup.png"
     },
     "Master": {
       "Diagnosis Master": "/emr/master/diagnosis-master.png",
@@ -263,7 +263,7 @@ const navigationData = {
       "Drug Level Privilege": "/emr/master/drug-level-privilege.png",
       "Assessment Triggering Set-up View": "/emr/master/assessment-triggering-set-up-view.png",
       "CPOE Common": "/emr/master/cpoe-common.png",
-      "F/U Assessment Trigger Master": "/emr/master/fu-assessment-trigger-master"
+      "F/U Assessment Trigger Master": "/emr/master/fu-assessment-trigger-master.png"
     },
     "MDS": {
       "Dashboard": "/emr/mds/dashboard.png",
@@ -271,15 +271,15 @@ const navigationData = {
       "Certification and Recerti": "/emr/mds/certification-and-recerti.png",
       "Resident & Scheduler": {
         "Resident List": "/emr/mds/resident-scheduler/resident-list.png",
-        "Resident's MDS Scheduler": "/emr/mds/resident-scheduler/residents-mds-scheduler"
+        "Resident's MDS Scheduler": "/emr/mds/resident-scheduler/residents-mds-scheduler.png"
       },
       "MDS Assessment": {
         "Resident's MDS List": "/emr/mds/mds-assessment/residents-mds-list.png",
         "RUG Worksheet": "/emr/mds/mds-assessment/rug-worksheet.png",
-        "CAA Worksheet List": "/emr/mds/mds-assessment/caa-worksheet-list"
+        "CAA Worksheet List": "/emr/mds/mds-assessment/caa-worksheet-list.png"
       },
       "Care Plan": {
-        "Resident Care Plan": "/emr/mds/care-plan/resident-care-plan"
+        "Resident Care Plan": "/emr/mds/care-plan/resident-care-plan.png"
       },
       "Config & Masters": {
         "Care Plan Master Library": "/emr/mds/config-masters/care-plan-master-library.png",
@@ -290,7 +290,7 @@ const navigationData = {
         "PPS/OBRA ARD Schedule": "/emr/mds/config-masters/pps-obra-ard-schedule.png",
         "QIO Contact Info Setup": "/emr/mds/config-masters/qio-contact-info-setup.png",
         "A1800/A2100 Mapping Setup": "/emr/mds/config-masters/a1800-a2100-mapping-setup.png",
-        "PDPM Optimizer Function Master": "/emr/mds/config-masters/pdpm-optimizer-function-master"
+        "PDPM Optimizer Function Master": "/emr/mds/config-masters/pdpm-optimizer-function-master.png"
       },
       "Reports": {
         "CMS672 Report": "/emr/mds/reports/cms672-report.png",
@@ -311,7 +311,7 @@ const navigationData = {
         "MDS To-do List": "/emr/mds/reports/mds-to-do-list.png",
         "Bill Category Report Summary": "/emr/mds/reports/bill-category-report-summary.png",
         "Bill Category Report Detail": "/emr/mds/reports/bill-category-report-detail.png",
-        "Default RUG List": "/emr/mds/reports/default-rug-list"
+        "Default RUG List": "/emr/mds/reports/default-rug-list.png"
       }
     }
   },
@@ -324,7 +324,7 @@ const navigationData = {
       "User Extraction": "/system/user-access-control/user-extraction.png",
       "Access Control": "/system/user-access-control/access-control.png",
       "Security Log": "/system/user-access-control/security-log.png",
-      "Unlock User": "/system/user-access-control/unlock-user"
+      "Unlock User": "/system/user-access-control/unlock-user.png"
     },
     "Admin": {
       "Implementation": {
@@ -334,7 +334,7 @@ const navigationData = {
           "[1.3] User Import": "/system/admin/implementation/facility-setup/user-import.png",
           "[1.4] Provider Import": "/system/admin/implementation/facility-setup/provider-import.png",
           "[1.5] Facility Layout": "/system/admin/implementation/facility-setup/facility-layout.png",
-          "[1.6] Billing master setup for Clinic": "/system/admin/implementation/facility-setup/billing-master-setup-for-clinic"
+          "[1.6] Billing master setup for Clinic": "/system/admin/implementation/facility-setup/billing-master-setup-for-clinic.png"
         },
         "[3] Clinical Setup": {
           "[3.1] Basic Clinical Master Setup": "/system/admin/implementation/clinical-setup/basic-clinical-master-setup.png",
@@ -342,39 +342,39 @@ const navigationData = {
           "[3.3] Order Basic Master Setup": "/system/admin/implementation/clinical-setup/order-basic-master-setup.png",
           "[3.4] Med Pass Time Setup": "/system/admin/implementation/clinical-setup/med-pass-time-setup.png",
           "[3.5] Clinical Layout": "/system/admin/implementation/clinical-setup/clinical-layout.png",
-          "[3.6] Weight List": "/system/admin/implementation/clinical-setup/weight-list"
+          "[3.6] Weight List": "/system/admin/implementation/clinical-setup/weight-list.png"
         },
         "[4] ADL Setup": {
-          "[4.1] Basic ADL Master & CNA Shift Setup": "/system/admin/implementation/adl-setup/basic-adl-master-cna-shift-setup"
+          "[4.1] Basic ADL Master & CNA Shift Setup": "/system/admin/implementation/adl-setup/basic-adl-master-cna-shift-setup.png"
         },
         "[7] Go Live": {
           "[7.1] EMR Go live data cleansing": "/system/admin/implementation/go-live/emr-go-live-data-cleansing.png",
-          "[7.2] CPOE Go live cleansing & setup": "/system/admin/implementation/go-live/cpoe-go-live-cleansing-setup"
+          "[7.2] CPOE Go live cleansing & setup": "/system/admin/implementation/go-live/cpoe-go-live-cleansing-setup.png"
         },
         "Facility": "/system/admin/implementation/facility.png",
         "Message": "/system/admin/implementation/message.png",
         "Configuration": "/system/admin/implementation/configuration.png",
         "Common Code": "/system/admin/implementation/common-code.png",
-        "Menu": "/system/admin/implementation/menu"
+        "Menu": "/system/admin/implementation/menu.png"
       }
     },
     "HQ": {
       "User/Facility": "/system/hq/user-facility.png",
-      "External Access": "/system/hq/external-access"
+      "External Access": "/system/hq/external-access.png"
     },
     "System Log": "/system/system-log.png",
     "Audit Log": "/system/audit-log.png",
     "System Report": "/system/system-report.png",
     "Interface": {
       "Ellora": "/system/interface/ellora.png",
-      "PIMG": "/system/interface/pimg"
+      "PIMG": "/system/interface/pimg.png"
     },
-    "Backup Files": "/system/backup-files"
+    "Backup Files": "/system/backup-files.png"
   },
   "e-Learning": {
     "Section Master": "/e-learning/section-master.png",
     "Role Master": "/e-learning/role-master.png",
     "e-Learning": "/e-learning/e-learning.png",
-    "e-Learning Report": "/e-learning/e-learning-report"
+    "e-Learning Report": "/e-learning/e-learning-report.png"
   }
 };
