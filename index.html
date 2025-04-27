@@ -8,13 +8,15 @@
 </head>
 <body>
     <div class="app-container">
-        <nav id="main-navigation" class="main-navigation"></nav>
+        <div class="nav-container">
+            <div class="logo-container"></div>
+            <div class="input-wrapper"><input class="input" placeholder="Search Menu" type="text"/></div>
+            <nav id="main-navigation" class="main-navigation"></nav>
+            <div class="bottom-icons"></div>
+        </div>
+        
         <main class="content-area">
-            <div class="page-content">
-                <h1>Page Content</h1>
-                <p>Select a navigation item to view its content.</p>
-                <div id="current-path"></div>
-            </div>
+            <img id="screen-shot" class="screen-shot" src="/dashboard/census.png"/>
         </main>
     </div>
     <script src="navigationData.js"></script>

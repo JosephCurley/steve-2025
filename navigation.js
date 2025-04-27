@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 	const navElement = document.getElementById('main-navigation');
 	const currentPathElement = document.getElementById('current-path');
-	
+	const screenShotElement = document.getElementById('screen-shot');
 	// State object to track expanded sections and items
 	const state = {
 			expandedSections: {},
@@ -137,16 +137,16 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	// Function to handle navigation
 	function navigateTo(path, title) {
-			// Update current path display
-			currentPathElement.innerHTML = `<strong>Selected:</strong> ${title} <br><strong>Path:</strong> ${path}`;
-			
-			// In a real application, you would load content here
-			console.log(`Navigating to: ${path}`);
+			screenShotElement.src=path;
 			
 			// You could also update URL without page reload
-			history.pushState(null, title, path);
+			history.pushState(null, title, `?path=${path}`);
 	}
 	
 	// Initialize the navigation
 	buildNavigation();
+
+	const params = new URLSearchParams(document.location.search);
+	const defaultPath = params.get("path");
+	screenShotElement.src=defaultPath || 'billing/census.png';
 });
