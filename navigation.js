@@ -141,6 +141,11 @@ document.addEventListener('DOMContentLoaded', function() {
 			
 			// You could also update URL without page reload
 			history.pushState(null, title, `?path=${path}`);
+
+			//Set active State
+			document.querySelector(`.is-active`)?.classList.remove("is-active");
+			const activeItem = document.querySelector(`[data-path="${path}"]`);
+			activeItem.classList.add("is-active");
 	}
 	
 	// Initialize the navigation
