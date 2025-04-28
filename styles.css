@@ -177,7 +177,7 @@ a {
 
 .bottom-icons {
   background-image: url("./icons/buttons.png");
-  background-position: center;
+  background-position: 13px 8px;
   background-repeat: no-repeat;
   background-size: 92%;
   background-color: var(--dark-background);

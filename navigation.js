@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	// Function to handle navigation
 	function navigateTo(path, title) {
-			screenShotElement.src=path;
+			screenShotElement.src=`images/${path}`;
 			
 			// You could also update URL without page reload
 			history.pushState(null, title, `?path=${path}`);
@@ -153,5 +153,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	const params = new URLSearchParams(document.location.search);
 	const defaultPath = params.get("path") || "/dashboard/census.png";
-	screenShotElement.src=defaultPath;
+	screenShotElement.src=`images/${defaultPath}`;
 });
