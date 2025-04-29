@@ -4,9 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	const screenShotElement = document.getElementById('screen-shot');
 	const searchBar = document.getElementById('search');
 	const searchResults = document.getElementById('search-results');
-
-	const flatData = Object.assign({}, ...function _flatten(o) { return [].concat(...Object.keys(o).map(k => typeof o[k] === 'object' ? _flatten(o[k]) : ({[k]: o[k]})))}(navigationData))
-
+	const flatData = Object.assign({}, ...function _flatten(o) { return [].concat(...Object.keys(o).map(k => typeof o[k] === 'object' ? _flatten(o[k]) : ({[`${k} #${o[k]}`]: o[k]})))}(navigationData))
 	// State object to track expanded sections and items
 	const state = {
 			expandedSections: {},
@@ -158,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		searchResults.innerHTML = null;
 		searchHits.map(hit => {
 			const li = document.createElement("li");
-			li.innerHTML = hit.text;
+			li.innerHTML = hit.text.split(" #")[0]
 			li.addEventListener("click", (e) => {
 				e.stopPropagation();
 				navigateTo(hit.url.substring(1), hit.text)
