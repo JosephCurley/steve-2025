@@ -2,10 +2,16 @@ document.addEventListener('DOMContentLoaded', function() {
 	const navElement = document.getElementById('main-navigation');
 	const currentPathElement = document.getElementById('current-path');
 	const screenShotElement = document.getElementById('screen-shot');
+	const searchBar = document.getElementById('search');
+	const searchResults = document.getElementById('search-results');
+
+	const flatData = Object.assign({}, ...function _flatten(o) { return [].concat(...Object.keys(o).map(k => typeof o[k] === 'object' ? _flatten(o[k]) : ({[k]: o[k]})))}(navigationData))
+
 	// State object to track expanded sections and items
 	const state = {
 			expandedSections: {},
-			expandedItems: {}
+			expandedItems: {},
+			searchHits: []
 	};
 	
 	// Function to build top-level navigation
@@ -145,11 +151,53 @@ document.addEventListener('DOMContentLoaded', function() {
 			//Set active State
 			document.querySelector(`.is-active`)?.classList.remove("is-active");
 			const activeItem = document.querySelector(`[data-path="${path}"]`);
-			activeItem.classList.add("is-active");
+			activeItem?.classList.add("is-active");
+	}
+
+	const populateResults = () => {
+		searchResults.innerHTML = null;
+		searchHits.map(hit => {
+			const li = document.createElement("li");
+			li.innerHTML = hit.text;
+			li.addEventListener("click", (e) => {
+				e.stopPropagation();
+				navigateTo(hit.url.substring(1), hit.text)
+			});
+			searchResults.appendChild(li);
+		})
+	}
+
+	const showNoResultsMessage = () => {
+		searchResults.innerHTML = "<div class='no-results'>No matches found</div>"
+	};
+
+	const bindSearch = () => {
+		searchBar.addEventListener("keyup", (e) => {
+			searchHits = [];
+			const value = e.target.value.toLowerCase();
+
+			if (value.length < 2) { return null}
+			searchResults.classList.add('is-visible');
+			Object.keys(flatData).filter(function(k){
+				if(k.toLowerCase().indexOf(value) > -1) {
+					console.log(flatData)
+					const obj = {};
+					obj.text = k;
+					obj.url = flatData[k];
+					searchHits.push(obj);
+				}
+			})
+			searchHits.length > 0 ? populateResults() : showNoResultsMessage()
+		});
 	}
 	
 	// Initialize the navigation
 	buildNavigation();
+	bindSearch();
+
+	document.addEventListener("click", () => {
+		searchResults.classList.remove("is-visible");
+	})
 
 	const params = new URLSearchParams(document.location.search);
 	const defaultPath = params.get("path") || "/dashboard/census.png";
